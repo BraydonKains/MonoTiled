@@ -1,15 +1,14 @@
 using System.IO;
 using System.Text.Json;
 
-namespace SeeNoEvil.Tiled {
+namespace MonoTiled {
     public static class TiledParser {
         public static TiledModel ReadMapJson(string fileName) {
-			StreamReader streamReader = File.OpenText(fileName);
-			string text = streamReader.ReadToEnd();
+			string json = File.ReadAllText(fileName);
 			var options = new JsonSerializerOptions {
 				PropertyNameCaseInsensitive = true,
 			};
-			return JsonSerializer.Deserialize<TiledModel>(text, options);
+			return JsonSerializer.Deserialize<TiledModel>(json, options);
         }
     }
 }

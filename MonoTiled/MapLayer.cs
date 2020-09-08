@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SeeNoEvil.Tiled {
+namespace MonoTiled {
     public class TileLayer {
 
 		public string Type {get; private set;}

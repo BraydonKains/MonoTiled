@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 
-namespace SeeNoEvil.Tiled {
+namespace MonoTiled {
     public class TiledMap {
 		public Dictionary<string, List<TileLocation>> View {get; private set;}
 		public Dictionary<string, List<ObjectCoordinate>> Objects {get; private set;}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 //TODO Do all these need to be public?
-namespace SeeNoEvil.Tiled {
+namespace MonoTiled {
     //TODO Can probably be a struct?
     public class ObjectLayer {
         public IEnumerable<ObjectCoordinate> Objects {get; private set;}

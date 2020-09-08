@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SeeNoEvil.Tiled {
+namespace MonoTiled {
     public struct TiledModel {
         public bool Infinite {get; set;}
         public IEnumerable<MapLayerModel> Layers {get; set;}

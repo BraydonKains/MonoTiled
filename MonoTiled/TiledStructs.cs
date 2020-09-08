@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace SeeNoEvil.Tiled {
+namespace MonoTiled {
 	public struct Tile {
 		public Tile(long _gid, Rectangle _srcRectangle, string _setName) {
 			gid = (uint)_gid;
