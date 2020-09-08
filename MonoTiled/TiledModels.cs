@@ -7,8 +7,8 @@ namespace MonoTiled {
 		public IEnumerable<TileSetModel> TileSets {get; set;}
 		public int TileHeight {get; set;}
 		public int TileWidth {get; set;}
-		public int Height {get; set;}
-		public int Width {get; set;}
+		public int MapHeight {get; set;}
+		public int MapWidth {get; set;}
     }
 
 	public struct TileSetModel {

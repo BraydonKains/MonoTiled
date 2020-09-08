@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace MonoTiled {
     public class TileLayer {
-
 		public string Type {get; private set;}
 		public string Name {get; private set;}
 		public readonly List<DataCoordinate> DataCoordinates = new List<DataCoordinate>();

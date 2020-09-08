@@ -28,8 +28,8 @@ namespace MonoTiled {
 			TileSets = model.TileSets.Select(layer => new TileSet(layer)).ToList();
 			TileHeight = model.TileHeight;
 			TileWidth = model.TileWidth;
-			Rows = model.Height;
-			Columns = model.Width;
+			Rows = model.MapHeight;
+			Columns = model.MapWidth;
 			TileCache = new Dictionary<uint, Tile>();
 			View = new Dictionary<string, List<TileLocation>>();
 		}
