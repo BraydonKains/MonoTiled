@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Microsoft.Xna.Framework;
 using System.Linq;
-using SeeNoEvil.Level;
+using Microsoft.Xna.Framework;
 
 namespace SeeNoEvil.Tiled {
     public class TiledMap {
@@ -20,11 +19,13 @@ namespace SeeNoEvil.Tiled {
 
         public TiledMap(TiledModel model) {
 			Infinite = model.Infinite;	
-			TileLayers = model.Layers.Where(model => model.Type == "tilelayer")
-				.Select(model => new TileLayer(model)).ToList();
-			ObjectLayers = model.Layers.Where(model => model.Type == "objectgroup")
-				.Select(model => new ObjectLayer(model)).ToList();
-			TileSets = model.TileSets.Select(model => new TileSet(model)).ToList();
+			TileLayers = model.Layers
+							.Where(layer => layer.Type == "tilelayer")
+							.Select(layer => new TileLayer(layer)).ToList();
+			ObjectLayers = model.Layers
+							.Where(layer => layer.Type == "objectgroup")
+							.Select(layer => new ObjectLayer(layer)).ToList();
+			TileSets = model.TileSets.Select(layer => new TileSet(layer)).ToList();
 			TileHeight = model.TileHeight;
 			TileWidth = model.TileWidth;
 			Rows = model.Height;

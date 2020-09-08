@@ -1,7 +1,6 @@
 // TODO Handle flipped tiles!
 using System.Collections.Generic;
 using System.Linq;
-using SeeNoEvil.Level;
 
 namespace SeeNoEvil.Tiled {
     public class TileLayer {

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTiled", "MonoTiled.csproj", "{C06A1141-A22E-4340-8CB9-C9BA4F31FEC1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTiled", "MonoTiled\MonoTiled.csproj", "{0191021F-633A-45EB-BBDE-C409475D1C13}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTiled.Test", "MonoTiled.Test\MonoTiled.Test.csproj", "{2BAF4F80-8A50-4D72-AAF6-BCAA5AC3C801}"
